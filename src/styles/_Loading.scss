@@ -1,0 +1,23 @@
+// Loading styles
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+    .loading__container {
+        color: #fff;
+        text-align: center;
+    }
+
+    .loading__instruction {
+        font-family: "Futura_Light";
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .loading__logo {
+        width: 280px;
+    }
+}
