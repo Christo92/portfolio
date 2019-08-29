@@ -5,7 +5,7 @@ import { SwishSpinner } from 'react-spinners-kit';
 import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
 // Svg
-import logo from '../img/logo-animate.svg'
+import logoAnimate from '../img/logo-animate.svg'
 
 // Styled-components
 const fadeInAnimations = keyframes`${fadeIn}`;
@@ -63,7 +63,7 @@ class Loading extends Component {
                 ) : (
                     <div className="loading__container">
                        <FadeInDiv> 
-                            <img src={logo} className="loading__logo" alt="Logo" />
+                            <img src={logoAnimate} className="loading__logo" alt="logo-loading" />
                        </FadeInDiv>
                     </div> 
                     

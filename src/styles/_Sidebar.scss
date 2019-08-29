@@ -1,0 +1,108 @@
+// Sidebar styles
+.menu-item{
+    margin-top: 55px;
+    margin-bottom: 0px !important;
+    font-size: 30px;
+    z-index: 10;
+    text-decoration: none !important;
+    
+    &:first-of-type {
+      margin-top: 0px;
+    }
+
+    &:active, &:visited, &:focus {
+      text-decoration: none !important;
+      border: none !important;
+      outline: none !important;
+    }
+
+    &::after {
+      content:"";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      border-top: 1px solid black;
+    }  
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: "Futura_Light";
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: #8B8B8B;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 45px;
+  top: 45px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #FFF;
+  height: 15% !important;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 41px !important;
+  width: 28px !important;
+  top: 40px !important;
+  right: 50px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #000;
+  height: 35px !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  width: 500px;
+  font-size: 1.15em;
+
+  position: fixed;
+    top: 80%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #FFF;
+  fill-opacity: 0.6;
+  background: url('../img/menu-background.jpg');
+  background-size: cover;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #000;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu-wrap {
+  width: 100% !important;
+}
