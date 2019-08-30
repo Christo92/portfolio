@@ -20,11 +20,11 @@ class About extends Component {
         return (
             <div className="about">
                 <FadeInDiv>
-                    <Header/>
+                    <Header />
                 </FadeInDiv>
 
                 <QueueAnim type="scale" delay={2000} duration={2000}>
-                
+
 
                     <div key="1" className="about__container">
                         <div className="about__presentation">
@@ -39,32 +39,32 @@ class About extends Component {
                         </div>
                         <div className="about__skills">
                             <h2 className="about__skills-title">Compétences</h2>
-                                <div className="about__list-skills">
-                                    <p className="about__list-title">- En Front :</p>
-                                    <div>
-                                        <p>React JS</p>
-                                        <p>Redux</p>
-                                        <p>SCSS</p>
-                                        <p>BEM</p>
-                                        <p>ES6</p>
-                                        <p>Webpack</p>
-                                    </div>
+                            <div className="about__list-skills">
+                                <p className="about__list-title">- En Front :</p>
+                                <div>
+                                    <p>React JS</p>
+                                    <p>Redux</p>
+                                    <p>SCSS</p>
+                                    <p>BEM</p>
+                                    <p>ES6</p>
+                                    <p>Webpack</p>
                                 </div>
-                                <div className="about__list-skills">
-                                    <p className="about__list-title">- En Back :</p>
-                                    <div>
-                                        <p>Node JS</p>
-                                        <p>Mongo</p>
-                                        <p>Express</p>
-                                    </div>
+                            </div>
+                            <div className="about__list-skills">
+                                <p className="about__list-title">- En Back :</p>
+                                <div>
+                                    <p>Node JS</p>
+                                    <p>Mongo</p>
+                                    <p>Express</p>
                                 </div>
-                                <div className="about__list-skills">
-                                    <p className="about__list-title">- En Testing :</p>
-                                    <div>
-                                        <p>Jest</p>
-                                        <p>Enzyme</p>
-                                    </div>
+                            </div>
+                            <div className="about__list-skills">
+                                <p className="about__list-title">- En Testing :</p>
+                                <div>
+                                    <p>Jest</p>
+                                    <p>Enzyme</p>
                                 </div>
+                            </div>
                         </div>
                         <div className="about__contact">
                             <h2 className="about__contact-title">Contact</h2>

@@ -1,27 +1,56 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+// Components
+import Header from './Header';
+// Third packages
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
+import QueueAnim from 'rc-queue-anim';
+
+// Img
+import project1 from '../img/smart-tribune.jpg';
+import project2 from '../img/project-incoming.jpg';
+
+// Styled-components
+const fadeInAnimations = keyframes`${fadeIn}`;
+
+const FadeInDiv = styled.div`
+    animation: 5s ${fadeInAnimations}
+`;
 
 class Works extends Component {
-
-    bgColorWorks = () => {
-
-    };
 
     render() {
         return (
             <div className="works">
-                <h2>Works Component</h2>
-                <div key="1">enter in queue</div>
-                    <div key="2">enter in queue</div>
-                    <div key="3">enter in queue</div>
-                    <div key="4">enter in queue</div>
-                    <div key="5">enter in queue</div>
-                    <div key="6">enter in queue</div>
-                    <div key="7">enter in queue</div>
-                    <div key="8">enter in queue</div>
-                    <div key="9">enter in queue</div>
-                    <div key="10">enter in queue</div>
-                    <div key="11">enter in queue</div>
-                    <div key="12">enter in queue</div>
+                <FadeInDiv>
+                    <Header />
+                </FadeInDiv>
+
+                <QueueAnim type="bottom" delay={2000} duration={4000}>
+
+                    <div key="1" className="works__container">
+                        <h2 className="works__title">Mes travaux</h2>
+                        <div className="works__lists">
+                            <div className="works__project">
+                                <a href="https://www.smart-tribune.com/fr/">
+                                    <img className="works__mission" src={project1} alt="" />
+                                </a>
+                                <a className="works__project-title" href="https://www.smart-tribune.com/fr/">Smart Tribune</a>
+                            </div>
+                            <div className="works__project">
+                                <img className="works__mission" src={project2} alt="" />
+                                <a className="works__project-title">Todos Memory (en dev)</a>
+                            </div>
+                            <div className="works__project">
+                                <img className="works__mission" src={project2} alt="" />
+                                <a className="works__project-title">Chat project (en dev)</a>
+                            </div>
+                        </div>
+
+                        <Link to="/home" className="works__to-home"> > Retour à l'accueil</Link>
+                    </div>
+                </QueueAnim>
             </div>
         );
     }
