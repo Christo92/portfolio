@@ -1,1 +1,21 @@
 // Works styles
+.works {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    background-color: $background-works;
+    // -webkit-animation: works 4s cubic-bezier(1,0,0,1) ;
+    // animation: works 4s cubic-bezier(1,0,0,1) ;  
+    // animation-fill-mode: forwards;
+    color: #FFF;
+}
+
+// @-webkit-keyframes works{
+//     to { background-color: $background-works }
+// }
+  
+// @keyframes works {
+//     to { background-color: $background-works; }
+// }

@@ -22,7 +22,7 @@
       bottom: -15px;
       left: 0;
       right: 0;
-      border-top: 1px solid black;
+      border-top: 1px solid $black-color;
     }  
 }
 
@@ -33,13 +33,14 @@
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #000;
+  color: $black-color;
+  transition-property: color !important;
+  transition-duration: 0.5s !important;
   font-family: "Futura_Light";
-}
 
-/* Change color on hover */
-.bm-item:hover {
-  color: #8B8B8B;
+  &:hover {
+    color: $blue-color;
+  }
 }
 
 /* The rest copied directly from react-burger-menu docs */
@@ -59,6 +60,12 @@
   height: 15% !important;
 }
 
+.bm-burger-bars-hover {
+  background-color: #C2C2C2;
+  transition-property: background-color !important;
+  transition-duration: 1s !important;
+}
+
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 41px !important;
@@ -67,10 +74,16 @@
   right: 50px !important;
 }
 
+.bm-cross-button:hover .bm-cross {
+  background-color: $blue-color; 
+}
+
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #000;
+  background-color: $black-color;
   height: 35px !important;
+  transition-property: background-color !important;
+  transition-duration: 0.5s !important;
 }
 
 /* General sidebar styles */
@@ -88,7 +101,7 @@
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #FFF;
-  fill-opacity: 0.6;
+  fill-opacity: 0.4;
   background: url('../img/menu-background.jpg');
   background-size: cover;
 }

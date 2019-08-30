@@ -5,11 +5,23 @@
         align-items: center;
         height: 75px;
         padding: 25px 45px 0px 45px;
+        position: fixed;
+
+        .header__link {
+
+            &:active,
+            &:visited,
+            &:focus {
+                text-decoration: none !important;
+                border: none !important;
+                outline: none !important;
+            }
+        }
 
         .header__logo {
             width: 75px;
         }
     }
 
-    
+
 }

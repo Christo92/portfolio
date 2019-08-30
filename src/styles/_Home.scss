@@ -1,0 +1,14 @@
+// Home style
+
+.home {
+    .home__to-about {
+        @include button-navigation;
+        font-size: 18px;
+        position: fixed;
+        top: 75%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+    }
+}
+

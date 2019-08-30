@@ -1,1 +1,173 @@
 // About styles
+.about {
+    width: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    background-color: $background-about;
+    // -webkit-animation: background 3s cubic-bezier(1,0,0,1) ;
+    // animation: background 3s cubic-bezier(1,0,0,1) ;  
+    // animation-fill-mode: forwards;
+    color: #FFF;
+
+    .about__container {
+        width: 700px;
+        margin: 70px auto 100px auto;
+
+        .about__presentation {
+            font-family: "Futura_Light";
+
+            .about__title {
+                font-family: "Futura_Medium";
+                font-size: 60px;
+                position: relative;
+                z-index: 1;
+    
+                &::after {
+                    content: "À propos";
+                    color: #5A5A5A;
+                    font-size: 89px;
+                    z-index: -1;
+                    right: 225px;
+                    bottom: 15px;
+                    position: relative;
+                    opacity: 0.3;
+                }
+            }
+    
+            .about__text {
+                font-size: 20px;
+                line-height: 35px;
+                margin-top: 45px;
+                
+                &:first-of-type {
+                    margin-top: 65px;
+                }
+            }
+        }
+
+        .about__skills, .about__contact {
+            margin-top: 100px;
+
+            .about__skills-title, .about__contact-title {
+                font-family: "Futura_Medium";
+                position: relative;
+                font-size: 30px;
+
+                &::after {
+                    content:"";
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    border-top: 5px solid #FFF;
+                    width: 70px;
+                }
+            }
+
+            .about__list-skills {
+                margin-top: 50px;
+
+                &:first-of-type {
+                    margin-top: 60px;
+                }
+
+                .about__list-title {
+                    font-family: "Futura_Light";
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+
+                div {
+                    display: flex;
+                    overflow: hidden;
+
+                    p {
+                        font-family: "Futura_Medium";
+                        display: inline;
+                        padding: 10px;
+                        margin: 10px;
+                        background: #FFF;
+                        color: $background-about;
+                    }
+                }
+
+            }
+        }
+
+        .about__contact {
+
+            .about__contact-sentence {
+                font-family: "Futura_Light";
+                margin-top: 60px;
+                font-size: 20px;
+                line-height: 35px;
+            }
+
+            .about__contact-info {
+                font-family: "Futura_Light";
+                font-size: 18px;
+                margin-top: 20px;
+
+                p {
+                    padding-left: 50px;
+                    position: relative;
+                }
+
+                p::before {
+                    content: url('../img/envelope.svg');
+                    width: 28px;
+                    height: 28px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+
+                .about__linkedin {
+                    text-decoration: none;
+                    position: relative;
+                    padding-left: 50px;
+                    display: block;
+                    margin-top: 35px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &:active, &:visited, &:focus {
+                        text-decoration: none;
+                        border: none ;
+                        outline: none ;
+                        color: #FFF;
+                    }
+
+                    &::before {
+                        content: url('../img/linkedin-logo.svg');
+                        width: 28px;
+                        height: 28px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .about__to-works {
+            @include button-navigation;
+            margin-top: 90px;
+            display: inline-block;
+        }
+    }
+}
+
+// Animations background
+// @-webkit-keyframes background {
+//     to { background-color: $background-about }
+// }
+  
+// @keyframes background {
+//     to { background-color: $background-about; }
+// }
