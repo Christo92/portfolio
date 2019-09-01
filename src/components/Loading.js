@@ -27,7 +27,7 @@ class Loading extends Component {
             this.setState({
                 done: !this.state.done
             })
-        }, 2500);
+        }, 3000);
 
         this.handleAnimation();
     }
@@ -37,7 +37,7 @@ class Loading extends Component {
             this.setState({
                 animation: !this.state.animation
             })
-        }, 5200);
+        }, 7500);
     }
 
     goHome = () => {

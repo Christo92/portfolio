@@ -175,7 +175,7 @@
 }
 
 // Beetween tablet and desktop
-@media (min-width: 850px) and (max-width: $desktop-screen) {
+@media (min-width: $inter-screen) and (max-width: $desktop-screen) {
     .about__container {
         width: 70%;
         margin: 130px auto 100px auto;
@@ -186,9 +186,8 @@
         font-size: 60px;
 
         &::after {
-            font-size: 70px;
-            right: 225px;
-
+            font-size: 45px;
+            right: 220px;
         }
     }
 
@@ -198,7 +197,7 @@
 }
 
 // Beetween smartphone and tablet
-@media (max-width: 850px) {
+@media (max-width: $inter-screen) {
     .about__container {
         width: 85%;
         margin: 55px auto 100px auto;
@@ -209,7 +208,7 @@
         font-size: 45px;
 
         &::after {
-            font-size: 50px;
+            font-size: 40px;
             right: 165px;
         }
     }
@@ -217,8 +216,6 @@
     .about__text, .about__list-title, .about__contact-sentence {
         font-size: 20px;
     }
-
-    
 }
 
 @media (max-width: $smartphone-screen) {
@@ -232,7 +229,7 @@
         font-size: 35px;
 
         &::after {
-            font-size: 70px;
+            font-size: 30px;
         }
     }
 

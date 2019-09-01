@@ -16,11 +16,11 @@ class About extends Component {
         return (
             <div className="about">
 
-            <QueueAnim type="top" delay={2000} duration={2000}>
+            <QueueAnim type="top" delay={1000} duration={2000}>
                 <Header key="1"/>
             </QueueAnim>
 
-                <QueueAnim type="scale" delay={2000} duration={2000}>
+                <QueueAnim type="scale" delay={1000} duration={2000}>
 
                     <div key="1" className="about__container">
                         <div className="about__presentation">

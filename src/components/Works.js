@@ -23,11 +23,11 @@ class Works extends Component {
     render() {
         return (
             <div className="works">
-                <FadeInDiv>
-                    <Header />
-                </FadeInDiv>
+                <QueueAnim type="top" delay={1000} duration={2000}>
+                    <Header key="1"/>
+                </QueueAnim>
 
-                <QueueAnim type="bottom" delay={2000} duration={4000}>
+                <QueueAnim type="bottom" delay={1000} duration={2000}>
 
                     <div key="1" className="works__container">
                         <h2 className="works__title">Mes travaux</h2>
@@ -45,6 +45,10 @@ class Works extends Component {
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
                                 <p className="works__project-title">Chat project (en dev)</p>
+                            </div>
+                            <div className="works__project">
+                                <img className="works__mission" src={project2} alt="" />
+                                <p className="works__project-title">StoryTelling (en dev)</p>
                             </div>
                         </div>
 

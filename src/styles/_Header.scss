@@ -43,7 +43,7 @@
 }
 
 // Only for menu
-@media (max-width: 850px) {
+@media (max-width: $inter-screen) {
     .header__navigation-bar {
         position: relative;
     }

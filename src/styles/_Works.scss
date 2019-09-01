@@ -8,19 +8,14 @@
     color: #FFF;
 
     .works__container {
-        width: 800px;
-        margin: 130px auto 100px auto;
-
         .works__title {
             font-family: "Futura_Medium";
-                font-size: 60px;
                 position: relative;
                 z-index: 1;
     
                 &::after {
                     content: "Mes travaux";
                     color: #5A5A5A;
-                    font-size: 67px;
                     z-index: -1;
                     right: 225px;
                     bottom: 15px;
@@ -30,15 +25,10 @@
         }
 
         .works__lists {
-            margin-top: 65px;
             display: flex;
             flex-wrap: wrap;
 
             .works__project {
-                display: flex;
-                flex-direction: column;
-                margin: 25px;
-
                 .works__mission {
                     width: 335px;
                 }
@@ -75,19 +65,112 @@
 
 // Bigger than 1200
 @media (min-width: $desktop-screen) {
+    .works__container {
+        width: 800px;
+        margin: 130px auto 100px auto;
+    }
 
+    .works__title {
+        font-family: "Futura_Medium";
+        font-size: 60px;
+
+        &::after {
+            font-size: 70px;
+            right: 225px;
+
+        }
+    }
+
+    .works__lists {
+        margin-top: 65px;
+    }
+
+    .works__project {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+    }
 }
 
 // Beetween tablet and desktop
-@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+@media (min-width: $inter-screen) and (max-width: $desktop-screen) {
+    .works__container {
+        width: 70%;
+        margin: 130px auto 100px auto;
+    }
 
+    .works__title {
+        font-family: "Futura_Medium";
+        font-size: 60px;
+
+        &::after {
+            font-size: 45px;
+            right: 225px;
+
+        }
+    }
+
+    .works__lists {
+        margin-top: 40px;
+    }
+
+    .works__project {
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+    }
 }
 
 // Beetween smartphone and tablet
-@media (max-width: $tablet-screen) {
+@media (max-width: $inter-screen) {
+    .works__container {
+        width: 85%;
+        margin: 55px auto 100px auto;
+    }
 
+    .works__title {
+        font-family: "Futura_Medium";
+        font-size: 45px;
+
+        &::after {
+            font-size: 40px;
+            right: 165px;
+        }
+    }
+
+    .works__lists {
+        margin-top: 40px;
+    }
+
+    .works__project {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
 }
 
 @media (max-width: $smartphone-screen) {
+    .works__container {
+        width: 85%;
+        margin: 130px auto 100px auto;
+    }
 
+    .works__title {
+        font-family: "Futura_Medium";
+        font-size: 35px;
+
+        &::after {
+            font-size: 30px;
+        }
+    }
+
+    .works__lists {
+        margin-top: 30px;
+    }
+
+    .works__project {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+    }
 }
