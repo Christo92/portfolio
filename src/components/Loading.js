@@ -41,7 +41,7 @@ class Loading extends Component {
     }
 
     goHome = () => {
-        if(this.state.animation === true) {
+        if (this.state.animation === true) {
             return (
                 <Redirect to="/home" />
             )
@@ -60,13 +60,13 @@ class Loading extends Component {
                         loading={loading}
                     />
                 ) : (
-                    <div className="loading__container">
-                       <FadeInDiv> 
-                            <img src={logoAnimate} className="loading__logo" alt="logo-loading" />
-                       </FadeInDiv>
-                    </div> 
-                    
-                )}
+                        <div className="loading__container">
+                            <FadeInDiv>
+                                <img src={logoAnimate} className="loading__logo" alt="logo-loading" />
+                            </FadeInDiv>
+                        </div>
+
+                    )}
                 {this.goHome()}
             </div>
         )

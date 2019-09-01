@@ -1,8 +1,8 @@
 // Works styles
 .works {
     width: 100%;
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     left: 0;
     background-color: $background-works;
     color: #FFF;
@@ -10,18 +10,18 @@
     .works__container {
         .works__title {
             font-family: "Futura_Medium";
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "Mes travaux";
+                color: #5A5A5A;
+                z-index: -1;
+                right: 225px;
+                bottom: 15px;
                 position: relative;
-                z-index: 1;
-    
-                &::after {
-                    content: "Mes travaux";
-                    color: #5A5A5A;
-                    z-index: -1;
-                    right: 225px;
-                    bottom: 15px;
-                    position: relative;
-                    opacity: 0.3;
-                }
+                opacity: 0.3;
+            }
         }
 
         .works__lists {
@@ -33,7 +33,7 @@
                     width: 335px;
                 }
             }
-            
+
 
             .works__project-title {
                 font-family: "Futura_Medium";
@@ -47,7 +47,9 @@
                 border: none;
                 outline: none;
 
-                &:active, &:visited, &:focus {
+                &:active,
+                &:visited,
+                &:focus {
                     text-decoration: none;
                     border: none;
                     outline: none;
@@ -172,5 +174,9 @@
         display: flex;
         flex-direction: column;
         margin: 20px 0px 0px 0px;
+
+        &:first-of-type {
+            margin: 15px 0px 0px 0px;
+        }
     }
 }

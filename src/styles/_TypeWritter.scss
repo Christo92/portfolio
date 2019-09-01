@@ -1,33 +1,35 @@
 // TyperWritter style
 .typewritter {
-    color: #FFF;
-    font-family: "Futura_Light";
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+  color: #FFF;
+  font-family: "Futura_Light";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 
-    // .typewritter__sentences {
-    //     font-size: 48px;
-    // }
+  // .typewritter__sentences {
+  //     font-size: 48px;
+  // }
 }
 
 // Animation of text
 .react-rotating-text-cursor {
-    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes blinking-cursor {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 // Bigger than 1200

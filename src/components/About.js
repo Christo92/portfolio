@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom';
 // Components
 import Header from './Header';
 // Third packages
-import styled, { keyframes } from 'styled-components';
-import { fadeIn } from 'react-animations';
 import QueueAnim from 'rc-queue-anim';
-
-// Styled-components
-const fadeInAnimations = keyframes`${fadeIn}`;
 
 class About extends Component {
 
@@ -16,9 +11,9 @@ class About extends Component {
         return (
             <div className="about">
 
-            <QueueAnim type="top" delay={1000} duration={2000}>
-                <Header key="1"/>
-            </QueueAnim>
+                <QueueAnim type="top" delay={1000} duration={2000}>
+                    <Header key="1" />
+                </QueueAnim>
 
                 <QueueAnim type="scale" delay={1000} duration={2000}>
 

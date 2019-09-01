@@ -1,8 +1,8 @@
 // About styles
 .about {
     width: 100%;
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     left: 0;
     background-color: $background-about;
     color: #FFF;
@@ -15,7 +15,7 @@
                 font-family: "Futura_Medium";
                 position: relative;
                 z-index: 1;
-    
+
                 &::after {
                     content: "À propos";
                     color: #5A5A5A;
@@ -25,27 +25,29 @@
                     opacity: 0.3;
                 }
             }
-    
+
             .about__text {
                 line-height: 35px;
                 margin-top: 45px;
-                
+
                 &:first-of-type {
                     margin-top: 65px;
                 }
             }
         }
 
-        .about__skills, .about__contact {
+        .about__skills,
+        .about__contact {
             margin-top: 100px;
 
-            .about__skills-title, .about__contact-title {
+            .about__skills-title,
+            .about__contact-title {
                 font-family: "Futura_Medium";
                 position: relative;
                 font-size: 30px;
 
                 &::after {
-                    content:"";
+                    content: "";
                     position: absolute;
                     bottom: -15px;
                     left: 0;
@@ -69,7 +71,8 @@
 
                 div {
                     display: flex;
-                    overflow: hidden;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
 
                     p {
                         font-family: "Futura_Medium";
@@ -123,10 +126,12 @@
                         text-decoration: underline;
                     }
 
-                    &:active, &:visited, &:focus {
+                    &:active,
+                    &:visited,
+                    &:focus {
                         text-decoration: none;
-                        border: none ;
-                        outline: none ;
+                        border: none;
+                        outline: none;
                         color: #FFF;
                     }
 
@@ -169,7 +174,9 @@
         }
     }
 
-    .about__text, .about__list-title, .about__contact-sentence {
+    .about__text,
+    .about__list-title,
+    .about__contact-sentence {
         font-size: 20px;
     }
 }
@@ -191,7 +198,9 @@
         }
     }
 
-    .about__text, .about__list-title, .about__contact-sentence {
+    .about__text,
+    .about__list-title,
+    .about__contact-sentence {
         font-size: 20px;
     }
 }
@@ -213,7 +222,9 @@
         }
     }
 
-    .about__text, .about__list-title, .about__contact-sentence {
+    .about__text,
+    .about__list-title,
+    .about__contact-sentence {
         font-size: 20px;
     }
 }
@@ -233,7 +244,9 @@
         }
     }
 
-    .about__text, .about__list-title, .about__contact-sentence {
+    .about__text,
+    .about__list-title,
+    .about__contact-sentence {
         font-size: 16px;
     }
 }

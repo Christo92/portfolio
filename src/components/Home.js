@@ -21,10 +21,10 @@ const Home = () => {
             <div className="home">
                 <Header />
                 <TypeWritter />
-                    <Link to="/about" className="home__to-about"> > Explorer le site</Link>
+                <Link to="/about" className="home__to-about"> > Explorer le site</Link>
                 <Footer />
             </div>
-        </FadeInDiv> 
+        </FadeInDiv>
     );
 }
 
