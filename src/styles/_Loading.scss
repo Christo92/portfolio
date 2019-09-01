@@ -16,8 +16,31 @@
         font-size: 25px;
         text-align: center;
     }
+}
 
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
     .loading__logo {
         width: 280px;
+    }
+}
+
+// Beetween tablet and desktop
+@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+    .loading__logo {
+        width: 280px;
+    }
+}
+
+// Beetween smartphone and tablet
+@media (max-width: $tablet-screen) {
+    .loading__logo {
+        width: 280px;
+    }
+}
+
+@media (max-width: $smartphone-screen) {
+    .loading__logo {
+        width: 150px;
     }
 }

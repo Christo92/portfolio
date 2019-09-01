@@ -40,11 +40,11 @@ class Works extends Component {
                             </div>
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
-                                <a className="works__project-title">Todos Memory (en dev)</a>
+                                <p className="works__project-title">Todos Memory (en dev)</p>
                             </div>
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
-                                <a className="works__project-title">Chat project (en dev)</a>
+                                <p className="works__project-title">Chat project (en dev)</p>
                             </div>
                         </div>
 

@@ -47,9 +47,6 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
   right: 45px;
   top: 45px;
 }
@@ -88,7 +85,6 @@
 
 /* General sidebar styles */
 .bm-menu {
-  width: 500px;
   font-size: 1.15em;
 
   position: fixed;
@@ -118,4 +114,88 @@
 
 .bm-menu-wrap {
   width: 100% !important;
+}
+
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
+  .bm-menu {
+    width: 500px;
+  }
+
+  .bm-burger-button {
+    position: fixed;  
+    width: 36px;
+    height: 30px;
+  }
+
+  .menu-item { 
+    font-size: 30px;
+  }
+}
+
+// Beetween tablet and desktop
+@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+  .bm-menu {
+    width: 500px;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-item { 
+    font-size: 30px;
+  }
+}
+
+// Media querie 
+@media (max-width: 850px) {
+  .bm-menu {
+    width: 70%;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-item { 
+    font-size: 20px;
+  }
+}
+
+// Beetween smartphone and tablet
+@media (max-width: $tablet-screen) {
+  .bm-menu {
+    width: 70%;
+  }
+
+  .bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-item { 
+    font-size: 20px;
+  }
+}
+
+@media (max-width: $smartphone-screen) {
+  .bm-menu {
+    width: 70%;
+  }
+
+  .bm-burger-button {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+  }
+
+  .menu-item { 
+    font-size: 20px;
+  }
 }

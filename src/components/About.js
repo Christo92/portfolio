@@ -19,12 +19,10 @@ class About extends Component {
     render() {
         return (
             <div className="about">
-                <FadeInDiv>
-                    <Header />
-                </FadeInDiv>
+
+                <Header />
 
                 <QueueAnim type="scale" delay={2000} duration={2000}>
-
 
                     <div key="1" className="about__container">
                         <div className="about__presentation">

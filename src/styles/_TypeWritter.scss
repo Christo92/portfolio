@@ -8,9 +8,9 @@
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 
-    .typewritter__sentences {
-        font-size: 50px;
-    }
+    // .typewritter__sentences {
+    //     font-size: 48px;
+    // }
 }
 
 // Animation of text
@@ -28,4 +28,32 @@
     100% {
       opacity: 0;
     }
+}
+
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
+  .typewritter__sentences {
+    font-size: 50px;
   }
+}
+
+
+// Beetween tablet and desktop
+@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+  .typewritter__sentences {
+    font-size: 31px;
+  }
+}
+
+// Beetween smartphone and tablet
+@media (max-width: $tablet-screen) {
+  .typewritter__sentences {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: $smartphone-screen) {
+  .typewritter__sentences {
+    font-size: 22px;
+  }
+}

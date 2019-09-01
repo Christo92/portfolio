@@ -5,7 +5,6 @@
         align-items: center;
         height: 75px;
         padding: 25px 45px 0px 45px;
-        position: fixed;
 
         .header__link {
 
@@ -17,11 +16,56 @@
                 outline: none !important;
             }
         }
+    }
+}
 
-        .header__logo {
-            width: 75px;
-        }
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
+    .header__logo {
+        width: 75px;
     }
 
+    .header__navigation-bar {
+        position: fixed;
+    }
+}
 
+// Beetween tablet and desktop
+@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+    .header__logo {
+        width: 75px;
+    }
+
+    .header__navigation-bar {
+        position: fixed;
+    }
+}
+
+// Only for menu
+@media (max-width: 850px) {
+    .header__navigation-bar {
+        position: relative;
+    }
+}
+
+
+// Beetween smartphone and tablet
+@media (max-width: $tablet-screen) {
+    .header__logo {
+        width: 60px;
+    }
+
+    .header__navigation-bar {
+        position: relative;
+    }
+}
+
+@media (max-width: $smartphone-screen) {
+    .header__logo {
+        width: 60px;
+    }
+
+    .header__navigation-bar {
+        position: relative;
+    }
 }

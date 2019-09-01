@@ -5,30 +5,21 @@
     top: 0; 
     left: 0;
     background-color: $background-about;
-    // -webkit-animation: background 3s cubic-bezier(1,0,0,1) ;
-    // animation: background 3s cubic-bezier(1,0,0,1) ;  
-    // animation-fill-mode: forwards;
     color: #FFF;
 
     .about__container {
-        width: 800px;
-        margin: 70px auto 100px auto;
-
         .about__presentation {
             font-family: "Futura_Light";
 
             .about__title {
                 font-family: "Futura_Medium";
-                font-size: 60px;
                 position: relative;
                 z-index: 1;
     
                 &::after {
                     content: "À propos";
                     color: #5A5A5A;
-                    font-size: 89px;
                     z-index: -1;
-                    right: 225px;
                     bottom: 15px;
                     position: relative;
                     opacity: 0.3;
@@ -36,7 +27,6 @@
             }
     
             .about__text {
-                font-size: 20px;
                 line-height: 35px;
                 margin-top: 45px;
                 
@@ -74,7 +64,6 @@
 
                 .about__list-title {
                     font-family: "Futura_Light";
-                    font-size: 20px;
                     margin-bottom: 15px;
                 }
 
@@ -100,7 +89,6 @@
             .about__contact-sentence {
                 font-family: "Futura_Light";
                 margin-top: 60px;
-                font-size: 20px;
                 line-height: 35px;
             }
 
@@ -163,11 +151,92 @@
     }
 }
 
-// Animations background
-// @-webkit-keyframes background {
-//     to { background-color: $background-about }
-// }
-  
-// @keyframes background {
-//     to { background-color: $background-about; }
-// }
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
+    .about__container {
+        width: 800px;
+        margin: 130px auto 100px auto;
+    }
+
+    .about__title {
+        font-family: "Futura_Medium";
+        font-size: 60px;
+
+        &::after {
+            font-size: 70px;
+            right: 225px;
+
+        }
+    }
+
+    .about__text, .about__list-title, .about__contact-sentence {
+        font-size: 20px;
+    }
+}
+
+// Beetween tablet and desktop
+@media (min-width: 850px) and (max-width: $desktop-screen) {
+    .about__container {
+        width: 70%;
+        margin: 130px auto 100px auto;
+    }
+
+    .about__title {
+        font-family: "Futura_Medium";
+        font-size: 60px;
+
+        &::after {
+            font-size: 70px;
+            right: 225px;
+
+        }
+    }
+
+    .about__text, .about__list-title, .about__contact-sentence {
+        font-size: 20px;
+    }
+}
+
+// Beetween smartphone and tablet
+@media (max-width: 850px) {
+    .about__container {
+        width: 85%;
+        margin: 55px auto 100px auto;
+    }
+
+    .about__title {
+        font-family: "Futura_Medium";
+        font-size: 45px;
+
+        &::after {
+            font-size: 50px;
+            right: 165px;
+        }
+    }
+
+    .about__text, .about__list-title, .about__contact-sentence {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media (max-width: $smartphone-screen) {
+    .about__container {
+        width: 85%;
+        margin: 130px auto 100px auto;
+    }
+
+    .about__title {
+        font-family: "Futura_Medium";
+        font-size: 35px;
+
+        &::after {
+            font-size: 70px;
+        }
+    }
+
+    .about__text, .about__list-title, .about__contact-sentence {
+        font-size: 16px;
+    }
+}

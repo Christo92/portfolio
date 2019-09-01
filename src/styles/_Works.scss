@@ -9,7 +9,7 @@
 
     .works__container {
         width: 800px;
-        margin: 70px auto 100px auto;
+        margin: 130px auto 100px auto;
 
         .works__title {
             font-family: "Futura_Medium";
@@ -71,4 +71,23 @@
             display: inline-block;
         }
     }
+}
+
+// Bigger than 1200
+@media (min-width: $desktop-screen) {
+
+}
+
+// Beetween tablet and desktop
+@media (min-width: $tablet-screen) and (max-width: $desktop-screen) {
+
+}
+
+// Beetween smartphone and tablet
+@media (max-width: $tablet-screen) {
+
+}
+
+@media (max-width: $smartphone-screen) {
+
 }
