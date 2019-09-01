@@ -10,17 +10,15 @@ import QueueAnim from 'rc-queue-anim';
 // Styled-components
 const fadeInAnimations = keyframes`${fadeIn}`;
 
-const FadeInDiv = styled.div`
-    animation: 5s ${fadeInAnimations}
-`;
-
 class About extends Component {
 
     render() {
         return (
             <div className="about">
 
-                <Header />
+            <QueueAnim type="top" delay={2000} duration={2000}>
+                <Header key="1"/>
+            </QueueAnim>
 
                 <QueueAnim type="scale" delay={2000} duration={2000}>
 
