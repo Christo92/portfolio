@@ -50,12 +50,12 @@
 // Beetween smartphone and tablet
 @media (max-width: $tablet-screen) {
   .typewritter__sentences {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: $smartphone-screen) {
   .typewritter__sentences {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
