@@ -62,7 +62,7 @@ class About extends Component {
                             <p className="about__contact-sentence">Vous pouvez me contactez via mon email ou mon linkedin !</p>
                             <div className="about__contact-info">
                                 <p>christopher.loubassou@gmail.com</p>
-                                <a className="about__linkedin" href="https://www.linkedin.com/in/christopherloubassou/">Christopher Loubassou</a>
+                                <a className="about__linkedin" href="https://www.linkedin.com/in/christopherloubassou/" rel="noopener noreferrer" target="_blank">Christopher Loubassou</a>
                             </div>
                         </div>
                     </div>
