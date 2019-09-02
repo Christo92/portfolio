@@ -42,8 +42,6 @@ class Works extends Component {
                                 <p className="works__project-title">StoryTelling</p>
                             </div>
                         </div>
-
-                        <Link to="/home" className="works__to-home"> > Retour à l'accueil</Link>
                     </div>
                 </QueueAnim>
             </div>

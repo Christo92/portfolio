@@ -51,6 +51,14 @@
 .bm-burger-button {
   right: 45px;
   top: 45px;
+
+  &:active,
+  &:visited,
+  &:focus {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+  }
 }
 
 /* Color/shape of burger icon bars */
@@ -71,6 +79,14 @@
   width: 28px !important;
   top: 40px !important;
   right: 50px !important;
+
+  &:active,
+  &:visited,
+  &:focus {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+  }
 }
 
 .bm-cross-button:hover .bm-cross {

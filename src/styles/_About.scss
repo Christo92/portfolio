@@ -121,6 +121,7 @@
                     padding-left: 50px;
                     display: block;
                     margin-top: 35px;
+                    color: #FFF;
 
                     &:hover {
                         text-decoration: underline;
@@ -146,12 +147,6 @@
                     }
                 }
             }
-        }
-
-        .about__to-works {
-            @include button-navigation;
-            margin-top: 90px;
-            display: inline-block;
         }
     }
 }

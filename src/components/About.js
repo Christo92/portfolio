@@ -65,8 +65,6 @@ class About extends Component {
                                 <a className="about__linkedin" href="https://www.linkedin.com/in/christopherloubassou/">Christopher Loubassou</a>
                             </div>
                         </div>
-
-                        <Link to="/works" className="about__to-works"> > Mes projets</Link>
                     </div>
                 </QueueAnim>
             </div>

@@ -12,7 +12,7 @@ import { fadeIn } from 'react-animations';
 const fadeInAnimations = keyframes`${fadeIn}`;
 
 const FadeInDiv = styled.div`
-    animation: 5s ${fadeInAnimations}
+    animation: 4s ${fadeInAnimations}
 `;
 
 const Home = () => {
