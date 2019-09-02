@@ -31,15 +31,15 @@ class Works extends Component {
                             </div>
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
-                                <p className="works__project-title">Todos Memory (en dev)</p>
+                                <p className="works__project-title">Todos Memory</p>
                             </div>
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
-                                <p className="works__project-title">Chat project (en dev)</p>
+                                <p className="works__project-title">Chat project</p>
                             </div>
                             <div className="works__project">
                                 <img className="works__mission" src={project2} alt="" />
-                                <p className="works__project-title">StoryTelling (en dev)</p>
+                                <p className="works__project-title">StoryTelling</p>
                             </div>
                         </div>
 
