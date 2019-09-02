@@ -7,7 +7,7 @@ const TypeWritter = () => {
     const sentences = [
         'Bonjour à tous !',
         'Je suis Christopher',
-        'Bienvenue sur mon portfolio'
+        'Voici mon portfolio'
     ];
 
     return (
