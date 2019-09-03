@@ -7,6 +7,14 @@
     background-color: $background-works;
     color: #FFF;
 
+    .works__animation {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $background-works;
+    }
+
     .works__container {
         .works__title {
             font-family: "Futura_Medium";
@@ -111,7 +119,7 @@
     .works__project {
         display: flex;
         flex-direction: column;
-        margin: 3px;
+        margin: 40px 3px 0px 3px;
     }
 }
 
@@ -138,7 +146,8 @@
 
     .works__project {
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         margin: 15px;
     }
 }
@@ -164,7 +173,8 @@
 
     .works__project {
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: flex-start;
         margin: 20px 0px 0px 0px;
 
         &:first-of-type {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 // Components
 import Header from './Header';
 // Third packages
@@ -18,7 +17,7 @@ class Works extends Component {
                     <Header key="1" />
                 </QueueAnim>
 
-                <QueueAnim type="bottom" delay={1000} duration={2000}>
+                <QueueAnim className="works__animation" type="bottom" delay={1000} duration={2000}>
 
                     <div key="1" className="works__container">
                         <h2 className="works__title">Mes travaux</h2>
