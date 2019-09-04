@@ -10,11 +10,36 @@
 
     .home__to-about {
         @include button-navigation;
-        font-size: 18px;
         position: fixed;
         top: 75%;
         left: 50%;
         /* bring your own prefixes */
         transform: translate(-50%, -50%);
+    }
+}
+
+// Beetween tablet and desktop
+@media (min-width: $inter-screen) and (max-width: $desktop-screen) {
+    .home__to-about {
+        font-size: 18px;
+    }
+}
+
+// Beetween smartphone and tablet
+@media (max-width: $inter-screen) {
+    .home__to-about {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 410px) {
+    .home__to-about {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: $smartphone-screen) {
+    .home__to-about {
+        font-size: 13px;
     }
 }

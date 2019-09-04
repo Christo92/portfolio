@@ -224,6 +224,19 @@
     }
 }
 
+@media (max-width: 410px) {
+
+    .about__title {
+        font-family: "Futura_Medium";
+        font-size: 45px;
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
 @media (max-width: $smartphone-screen) {
     .about__container {
         width: 85%;
