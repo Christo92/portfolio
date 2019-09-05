@@ -9,6 +9,7 @@ import Works from './Works';
 const App = () => {
     return (
         <div className="app">
+        
             <Route exact path="/" component={Loading} />
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
