@@ -87,6 +87,7 @@
         }
 
         .about__contact {
+            margin-bottom: 65px;
 
             .about__contact-sentence {
                 font-family: "Futura_Light";
@@ -148,6 +149,10 @@
             }
         }
     }
+}
+
+.about__to-works {
+    @include button-navigation;
 }
 
 // Bigger than 1200

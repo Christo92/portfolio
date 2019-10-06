@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Footer extends Component {
+const Footer = () => {
 
-    render() {
-        const currentDate = (new Date().getFullYear());
+    const currentDate = (new Date().getFullYear());
 
-        return (
-            <div className="footer">
-                <p className="footer__copyright">© All rights reserved, {currentDate}</p>
-            </div>
-        );
-    }
+    return (
+        <div className="footer">
+            <p className="footer__copyright">© All rights reserved, {currentDate}</p>
+        </div>
+    );
 }
 
 export default Footer;

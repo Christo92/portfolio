@@ -24,6 +24,7 @@
         }
 
         .works__lists {
+            margin-bottom: 65px;
 
             .works__project-title {
                 font-family: "Futura_Medium";
@@ -45,6 +46,10 @@
             }
         }
     }
+}
+
+.works__to-home {
+    @include button-navigation;
 }
 
 // Bigger than 1200
