@@ -3,21 +3,34 @@ import { Link } from 'react-router-dom';
 // Components
 import Header from './Header';
 // Third packages
-import QueueAnim from 'rc-queue-anim';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn, zoomIn } from 'react-animations';
 
 // Img
 import project1 from '../img/smart-tribune.jpg';
 import project2 from '../img/project-incoming.jpg';
 
+// Styled-components
+const fadeInAnimations = keyframes`${fadeIn}`;
+const zoomInAnimations = keyframes`${zoomIn}`;
+
+const FadeInDiv = styled.div`
+    animation: 4s ${fadeInAnimations}
+`;
+
+const ZoomInDiv = styled.div`
+    animation: 3s ${zoomInAnimations}
+`;
+
 const Works = () => {
 
     return (
         <div className="works">
-            <QueueAnim type="top" delay={1000} duration={2000}>
+            <FadeInDiv type="top" delay={1000} duration={2000}>
                 <Header key="1" />
-            </QueueAnim>
+            </FadeInDiv>
 
-            <QueueAnim type="bottom" delay={1000} duration={2000}>
+            <ZoomInDiv type="bottom" delay={1000} duration={2000}>
 
                 <div key="1" className="works__container">
                     <h2 className="works__title">Mes travaux</h2>
@@ -36,10 +49,14 @@ const Works = () => {
                             <img className="works__mission" src={project2} alt="" />
                             <p className="works__project-title">Chat project</p>
                         </div>
+                        <div className="works__project">
+                            <img className="works__mission" src={project2} alt="" />
+                            <p className="works__project-title">Awworld project</p>
+                        </div>
                     </div>
                     <Link to="/works" className="works__to-home"> > Retour à l'accueil</Link>
                 </div>
-            </QueueAnim>
+            </ZoomInDiv>
         </div>
     );
 

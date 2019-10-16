@@ -2,19 +2,32 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Components
 import Header from './Header';
-// Third packages
-import QueueAnim from 'rc-queue-anim';
+
+import styled, { keyframes } from 'styled-components';
+import { fadeIn, zoomIn } from 'react-animations';
+
+// Styled-components
+const fadeInAnimations = keyframes`${fadeIn}`;
+const zoomInAnimations = keyframes`${zoomIn}`;
+
+const FadeInDiv = styled.div`
+    animation: 4s ${fadeInAnimations}
+`;
+
+const ZoomInDiv = styled.div`
+    animation: 3s ${zoomInAnimations}
+`;
 
 const About = () => {
 
     return (
         <div className="about">
 
-            <QueueAnim type="top" delay={1000} duration={2000}>
+            <FadeInDiv>
                 <Header key="1" />
-            </QueueAnim>
+            </FadeInDiv>
 
-            <QueueAnim type="scale" delay={1000} duration={2000}>
+            <ZoomInDiv>
 
                 <div key="1" className="about__container">
                     <div className="about__presentation">
@@ -66,7 +79,7 @@ const About = () => {
                     </div>
                     <Link to="/works" className="about__to-works"> > Voir les projets</Link>
                 </div>
-            </QueueAnim>
+            </ZoomInDiv>
         </div>
     );
 }

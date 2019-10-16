@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 // Components
 import Loading from './Loading';
 import Home from './Home';
@@ -9,11 +9,12 @@ import Works from './Works';
 const App = () => {
     return (
         <div className="app">
-        
-            <Route exact path="/" component={Loading} />
-            <Route path="/home" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/works" component={Works} />
+            <Switch>
+                <Route exact path="/" component={Loading} />
+                <Route path="/home" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/works" component={Works} />
+            </Switch>
         </div>
     )
 }

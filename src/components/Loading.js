@@ -13,7 +13,6 @@ const fadeInAnimations = keyframes`${fadeIn}`;
 const FadeInDiv = styled.div`
     animation: 3s ${fadeInAnimations}
 `;
-
 class Loading extends Component {
 
     state = {
