@@ -35,7 +35,7 @@ const About = () => {
                         <p className="about__text">
                             Je suis un développeur javascript résidant proche de Paris. <br />
                             En commençant à apprendre le javascript, je me suis tout d’abord principalement intéressé au Front End. <br />
-                            Toutefois, par la suite je me suis intéressé de plus en plus sur le Back End. <br />
+                            Toutefois, par la suite je me suis intéressé de plus en plus sur le Back End et au testing. <br />
                         </p>
 
                         <p className="about__text">Mon objectif est de devenir un dévéloppeur FullStack JS. Je recherche un CDI. </p>
@@ -51,6 +51,7 @@ const About = () => {
                                 <p>BEM</p>
                                 <p>ES6</p>
                                 <p>Webpack</p>
+                                <p>TypeScript</p>
                             </div>
                         </div>
                         <div className="about__list-skills">
