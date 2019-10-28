@@ -8,7 +8,8 @@ import { fadeIn, zoomIn } from 'react-animations';
 
 // Img
 import project1 from '../img/smart-tribune.jpg';
-import project2 from '../img/project-incoming.jpg';
+import project2 from '../img/crud-mern.jpg';
+import project3 from '../img/project-incoming.jpg';
 
 // Styled-components
 const fadeInAnimations = keyframes`${fadeIn}`;
@@ -39,22 +40,22 @@ const Works = () => {
                             <a href="https://www.smart-tribune.com/fr/">
                                 <img className="works__mission" src={project1} alt="" />
                             </a>
-                            <a className="works__project-title" href="https://www.smart-tribune.com/fr/">Smart Tribune</a>
+                            <a className="works__project-title" href="https://www.smart-tribune.com/fr/" target="_blank" rel="noopener noreferrer" >Smart Tribune</a>
                         </div>
                         <div className="works__project">
                             <img className="works__mission" src={project2} alt="" />
+                            <a className="works__project-title" href="https://crud-mern-project.herokuapp.com" target="_blank" rel="noopener noreferrer" >Crud-Mern</a>
+                        </div>
+                        <div className="works__project">
+                            <img className="works__mission" src={project3} alt="" />
                             <p className="works__project-title">Weather Project</p>
                         </div>
                         <div className="works__project">
-                            <img className="works__mission" src={project2} alt="" />
-                            <p className="works__project-title">Chat project</p>
-                        </div>
-                        <div className="works__project">
-                            <img className="works__mission" src={project2} alt="" />
+                            <img className="works__mission" src={project3} alt="" />
                             <p className="works__project-title">Awworld project</p>
                         </div>
                     </div>
-                    <Link to="/works" className="works__to-home"> > Retour à l'accueil</Link>
+                    <Link to="/home" className="works__to-home"> > Retour à l'accueil</Link>
                 </div>
             </ZoomInDiv>
         </div>

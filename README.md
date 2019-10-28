@@ -1,3 +1,3 @@
 # Portfolio
 
-Creation of my portfolio to have a website CV
+Creation of my portfolio to have a website CV with ReactJS.
