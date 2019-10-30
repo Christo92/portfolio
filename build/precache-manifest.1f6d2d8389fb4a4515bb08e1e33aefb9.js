@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e55911244605f764a7bd84aae9e3b3d0",
+    "revision": "497ff18ac6c81472a4391ba2a5c7f717",
     "url": "/index.html"
   },
   {
-    "revision": "983293c977bb90ae6f50",
+    "revision": "ac9d97f9f667cdaf36be",
     "url": "/static/css/main.e19cf741.chunk.css"
   },
   {
-    "revision": "1768e56dda3d44f78e8e",
-    "url": "/static/js/2.ec376a51.chunk.js"
+    "revision": "781d20d2e5a58541f0bb",
+    "url": "/static/js/2.723e51fa.chunk.js"
   },
   {
-    "revision": "983293c977bb90ae6f50",
-    "url": "/static/js/main.8c0bd0cb.chunk.js"
+    "revision": "ac9d97f9f667cdaf36be",
+    "url": "/static/js/main.8a6db7b5.chunk.js"
   },
   {
     "revision": "c49018507a564c0ada45",
     "url": "/static/js/runtime~main.b908f969.js"
+  },
+  {
+    "revision": "152cdbef487a984f5eb1f82c692d1d5a",
+    "url": "/static/media/crud-mern.152cdbef.jpg"
   },
   {
     "revision": "bcc145ca77fc4e3893e31a47c01dae48",
@@ -52,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/menu-background.d3941c0e.jpg"
   },
   {
-    "revision": "cd16f7364fad67f282aa7b9abe9ecd9a",
-    "url": "/static/media/project-incoming.cd16f736.jpg"
+    "revision": "1537476a7df09c1f9a75b6d595ca9b67",
+    "url": "/static/media/project-incoming.1537476a.jpg"
   },
   {
     "revision": "9de509e9aea1d7bf9ae8948306ab1c91",

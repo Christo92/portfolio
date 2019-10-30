@@ -51,7 +51,6 @@ const About = () => {
                                 <p>BEM</p>
                                 <p>ES6</p>
                                 <p>Webpack</p>
-                                <p>TypeScript</p>
                             </div>
                         </div>
                         <div className="about__list-skills">
