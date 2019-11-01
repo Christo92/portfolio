@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 // Svg
 import logo from '../img/logo.svg';
 
-const Header = () => {
+function Header() {
     return (
         <div className="header">
             <Sidebar />
