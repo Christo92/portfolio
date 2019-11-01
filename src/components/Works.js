@@ -23,7 +23,7 @@ const ZoomInDiv = styled.div`
     animation: 3s ${zoomInAnimations}
 `;
 
-const Works = () => {
+function Works() {
 
     return (
         <div className="works">
@@ -48,7 +48,7 @@ const Works = () => {
                         </div>
                         <div className="works__project">
                             <img className="works__mission" src={project3} alt="" />
-                            <p className="works__project-title">Weather Project</p>
+                            <p className="works__project-title">Reused Components</p>
                         </div>
                         <div className="works__project">
                             <img className="works__mission" src={project3} alt="" />

@@ -18,7 +18,7 @@ const ZoomInDiv = styled.div`
     animation: 3s ${zoomInAnimations}
 `;
 
-const About = () => {
+function About() {
 
     return (
         <div className="about">
