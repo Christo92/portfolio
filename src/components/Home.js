@@ -15,7 +15,7 @@ const FadeInDiv = styled.div`
     animation: 1s ${fadeInAnimations}
 `;
 
-const Home = () => {
+function Home() {
     return (
         <FadeInDiv>
             <div className="home">
