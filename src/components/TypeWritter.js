@@ -2,7 +2,7 @@ import React from 'react';
 // React-rotating-text
 import ReactRotatingText from 'react-rotating-text';
 
-const TypeWritter = () => {
+function TypeWritter() {
 
     const sentences = [
         'Bonjour à tous !',

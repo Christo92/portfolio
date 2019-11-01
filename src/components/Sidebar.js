@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // React-burger-menu
 import { bubble as Menu } from "react-burger-menu";
 
-const Sidebar = () => {
+function Sidebar() {
     return (
         <Menu>
             <Link className="menu-item" to="/home">Home</Link>
