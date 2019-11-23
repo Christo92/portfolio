@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e19cf741.chunk.css",
-    "main.js": "/static/js/main.9af45697.chunk.js",
-    "main.js.map": "/static/js/main.9af45697.chunk.js.map",
+    "main.js": "/static/js/main.076eb276.chunk.js",
+    "main.js.map": "/static/js/main.076eb276.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.b908f969.js",
     "runtime~main.js.map": "/static/js/runtime~main.b908f969.js.map",
     "static/js/2.0faf8898.chunk.js": "/static/js/2.0faf8898.chunk.js",
     "static/js/2.0faf8898.chunk.js.map": "/static/js/2.0faf8898.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5525e4e3d1f220f7993bc6d7812bc894.js": "/precache-manifest.5525e4e3d1f220f7993bc6d7812bc894.js",
+    "precache-manifest.bf61716797fea6eeb584a54939b922af.js": "/precache-manifest.bf61716797fea6eeb584a54939b922af.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.e19cf741.chunk.css.map": "/static/css/main.e19cf741.chunk.css.map",
     "static/media/crud-mern.jpg": "/static/media/crud-mern.152cdbef.jpg",
