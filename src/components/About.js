@@ -38,7 +38,7 @@ function About() {
                             Toutefois, par la suite je me suis intéressé de plus en plus sur le Back End et au testing. <br />
                         </p>
 
-                        <p className="about__text">Mon objectif est de devenir un dévéloppeur FullStack JS. Je recherche un CDI. </p>
+                        <p className="about__text">Je recherche un CDO en tant que dévéloppeur Front-End ReactJS</p>
                     </div>
                     <div className="about__skills">
                         <h2 className="about__skills-title">Compétences</h2>
