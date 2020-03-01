@@ -35,10 +35,10 @@ function About() {
                         <p className="about__text">
                             Je suis un développeur javascript résidant proche de Paris. <br />
                             En commençant à apprendre le javascript, je me suis tout d’abord principalement intéressé au Front End. <br />
-                            Toutefois, par la suite je me suis intéressé de plus en plus sur le Back End et au testing. <br />
+                            Toutefois, par la suite je me suis intéressé de plus en plus sur le Back End (Node.js) et au testing. <br />
                         </p>
 
-                        <p className="about__text">Je recherche un CDI en tant que dévéloppeur Front-End ReactJS.</p>
+                        <p className="about__text">Je suis actuellement en CDI chez beNext (dévéloppeur Front-End ReactJS).</p>
                     </div>
                     <div className="about__skills">
                         <h2 className="about__skills-title">Compétences</h2>
